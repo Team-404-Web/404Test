@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 404 - Hilfe für Opfer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #0f0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #0f0;
+        }
+        a {
+            color: #0f0;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 20px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 0 0 5px 5px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #0f0;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #0f0;
+            background: rgba(0, 255, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.8) contrast(1.2);
+        }
+        .matrix-text {
+            position: absolute;
+            top: 140px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 1001;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+            margin-bottom: 40px;
+        }
+        .matrix-text h1 {
+            color: #0f0;
+            margin: 0;
+            font-size: 40px;
+            text-shadow: 0 0 10px #0f0;
+            letter-spacing: 2px;
+        }
+        .content {
+            padding: 200px 40px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin-top: 80px;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 255, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="social.html">Social Media</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="praevension.html">Prävension</a>
+        <a href="hilfe-pedo.html">Hilfe für Täter</a>
+        <a href="hilfe-opfer.html">Hilfe für Opfer</a>
+    </nav>
+
+    <video class="matrix-bg" autoplay loop muted>
+        <source src="parallax-bg.mp4" type="video/mp4">
+    </video>
+    
+    <div class="matrix-text">
+        <h1>Hilfe für Opfer</h1>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2>Krisenintervention</h2>
+            <p>24/7 Notfallhilfe</p>
+            <a href="tel:+4980012345678" class="help-link">Notfallnummer</a>
+        </div>
+
+        <div class="section">
+            <h2>Psychologische Unterstützung</h2>
+            <p>Professionelle Beratung</p>
+            <a href="https://www.psychologische-unterstuetzung.de" class="help-link">Zur Website</a>
+        </div>
+
+        <div class="section">
+            <h2>Rechtliche Unterstützung</h2>
+            <p>Rechtsbeistand und Beratung</p>
+            <a href="https://www.rechtliche-unterstuetzung.de" class="help-link">Zur Website</a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
